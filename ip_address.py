@@ -46,6 +46,7 @@ print("to exit type : exit.")
 while not stop_prog:
     ip_address = input("--> enter ip address : ")
     if ip_address == "exit":
+        clear_terminal()
         exit()
     check = is_valid_ipv4(ip_address)
     if not check :
